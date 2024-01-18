@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+</head>
+<body>
+   <textarea cols="90" rows="40">
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <meta charset="UTF-8">
+         <script type="text/javascript">
+            function samochód(marka,model,maksymalna_predkosc)
+            {
+               this.marka=marka;
+               this.model=model;
+               this.maksymalna_predkosc=maksymalna_predkosc;
+            }
+
+            samochód.prototype.wypisz = function () 
+            {
+            alert(this.marka + ' ' + this.model+ ' ' + this.maksymalna_predkosc);
+            };
+
+            var samochód1 = new samochód("Audi", "A6 e-tron", "160km/h");
+            var samochód2 = new samochód('Skoda', 'Superb', '300km/h');
+            samochód1.wypisz();
+            samochód2.wypisz();
+            document.write("dostęp do właściwości"+"<br>");
+            document.write("Pierwszy samochód"+" &nbsp;Marka: "+samochód1.marka+" &nbsp;Model: "+samochód1.model+" &nbsp;Max predkość: "+samochód1.maksymalna_predkosc+"<br>");
+            document.write("Drugi samochód"+" &nbsp;Marka: "+samochód2.marka+" &nbsp;Model: "+samochód2.model+" &nbsp;Max predkość: "+samochód2.maksymalna_predkosc);
+         </script>
+      </head>
+      <body>
+         <br>
+   programowanie obiektowe
+      </body>
+      </html>
+   </textarea>
+</body>
+</html>
